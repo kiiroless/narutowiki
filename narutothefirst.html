@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Wiki - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #FFA500, #1E3A8A);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .logo span {
+            color: #FFA500;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+        
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 30px;
+            border: none;
+            font-size: 1.1rem;
+            padding-left: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .search-box::before {
+            content: "🔍";
+            position: absolute;
+            left: 15px;
+            top: 12px;
+            font-size: 1.5rem;
+        }
+        
+        .featured-section {
+            margin: 50px 0;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .featured-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .featured-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .featured-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .featured-card h3 {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">NARUTO<span>Wiki</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Jutsu</a></li>
+                    <li><a href="#">Villages</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <h1>Welcome to Naruto Wiki</h1>
+            <p>The ultimate source of information about the Naruto and Boruto series, including characters, abilities, story arcs, and more!</p>
+            <div class="search-box">
+                <input type="text" placeholder="Search the Naruto universe...">
+            </div>
+        </section>
+        
+        <section class="featured-section">
+            <h2 class="section-title">Featured Characters</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <img src="https://via.placeholder.com/300x200?text=Naruto" alt="Naruto Uzumaki">
+                    <h3>Naruto Uzumaki</h3>
+                </div>
+                <div class="featured-card">
+                    <img src="https://via.placeholder.com/300x200?text=Sasuke" alt="Sasuke Uchiha">
+                    <h3>Sasuke Uchiha</h3>
+                </div>
+                <div class="featured-card">
+                    <img src="https://via.placeholder.com/300x200?text=Sakura" alt="Sakura Haruno">
+                    <h3>Sakura Haruno</h3>
+                </div>
+                <div class="featured-card">
+                    <img src="https://via.placeholder.com/300x200?text=Kakashi" alt="Kakashi Hatake">
+                    <h3>Kakashi Hatake</h3>
+                </div>
+            </div>
+        </section>
+        
+        <section class="featured-section">
+            <h2 class="section-title">Popular Jutsu</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <img src="https://via.placeholder.com/300x200?text=Rasengan" alt="Rasengan">
+                    <h3>Rasengan</h3>
+                </div>
+                <div class="featured-card">
+                    <img src="https://via.placeholder.com/300x200?text=Chidori" alt="Chidori">
+                    <h3>Chidori</h3>
+                </div>
+                <div class="featured-card">
+                    <img src="https://via.placeholder.com/300x200?text=Shadow+Clone" alt="Shadow Clone">
+                    <h3>Shadow Clone</h3>
+                </div>
+                <div class="featured-card">
+                    <img src="https://via.placeholder.com/300x200?text=Sharingan" alt="Sharingan">
+                    <h3>Sharingan</h3>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2023 Naruto Wiki. All rights reserved. Naruto is a registered trademark of Shueisha.</p>
+        </footer>
+    </div>
+</body>
+</html>
